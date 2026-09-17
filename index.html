@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Z RAKIB FASHION — বাচ্চা ও বড়দের ছেলে-মেয়েদের বিভিন্ন রকম জামাকাপড়।" />
+  <title>Z RAKIB FASHION</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">🚚 ক্যাশ অন ডেলিভারি • সহজে WhatsApp-এ অর্ডার করুন</div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <img src="assets/logo.jpg" alt="Z RAKIB FASHION Logo" />
+        <span>Z RAKIB FASHION</span>
+      </a>
+      <nav>
+        <a href="#home">হোম</a>
+        <a href="#products">পণ্য</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+      <a class="wa-small" href="https://wa.me/8801911254448" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">ZRF • FASHION STORE</span>
+          <h1>আপনার স্টাইল,<br><span>আপনার গল্প।</span></h1>
+          <p>বাচ্চা, ছেলে ও মেয়েদের জন্য ট্রেন্ডি ও আরামদায়ক জামাকাপড় — এক জায়গায়।</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">পণ্য দেখুন</a>
+            <a class="btn outline" href="https://wa.me/8801911254448?text=আসসালামু%20আলাইকুম%2C%20Z%20RAKIB%20FASHION-এর%20পণ্য%20সম্পর্কে%20জানতে%20চাই।" target="_blank" rel="noopener">WhatsApp-এ কথা বলুন</a>
+          </div>
+          <div class="trust-row">
+            <span>✓ ছেলে-মেয়ে ও বাচ্চাদের পোশাক</span>
+            <span>✓ COD অর্ডার</span>
+            <span>✓ WhatsApp অর্ডার</span>
+          </div>
+        </div>
+        <div class="hero-logo">
+          <div class="logo-frame"><img src="assets/logo.jpg" alt="Z RAKIB FASHION" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip">
+      <div class="container category-grid">
+        <button class="category active" data-filter="all">সব পণ্য</button>
+        <button class="category" data-filter="ladies">Ladies</button>
+        <button class="category" data-filter="kids">Kids</button>
+        <button class="category" data-filter="tshirt">T-Shirt</button>
+        <button class="category" data-filter="bottom">Pants / Leggings</button>
+      </div>
+    </section>
+
+    <section id="products" class="products-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">OUR COLLECTION</span>
+            <h2>জনপ্রিয় পণ্য</h2>
+          </div>
+          <p>দাম আপনি পরে নিজের মতো করে বসাতে পারবেন। বর্তমানে “মূল্য জানতে অর্ডার করুন” দেখানো হচ্ছে।</p>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">ABOUT ZRF</span>
+          <h2>ফ্যাশন, মান ও আরাম — একসাথে।</h2>
+          <p>Z RAKIB FASHION-এ বাচ্চা, ছেলে ও মেয়েদের বিভিন্ন ধরনের পোশাক পাওয়া যাবে। আপনার পছন্দের পণ্য বেছে নিয়ে সরাসরি WhatsApp-এ অর্ডার পাঠাতে পারবেন।</p>
+        </div>
+        <div class="feature-list">
+          <div><b>01</b><span>পছন্দের পোশাক বেছে নিন</span></div>
+          <div><b>02</b><span>অর্ডার ফর্মে তথ্য দিন</span></div>
+          <div><b>03</b><span>WhatsApp-এ অর্ডার পাঠান</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-card">
+        <div>
+          <span class="eyebrow">CONTACT US</span>
+          <h2>অর্ডার বা তথ্যের জন্য যোগাযোগ করুন</h2>
+          <p>WhatsApp: <strong>01911254448</strong></p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="https://wa.me/8801911254448" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn dark" id="facebookBtn" href="https://www.facebook.com/ZRF" target="_blank" rel="noopener">Facebook Page: ZRF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Z RAKIB FASHION</span>
+      <span>Wear Your Story</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-box">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <span class="eyebrow">ORDER NOW</span>
+      <h2 id="modalProduct">পণ্য</h2>
+      <p class="modal-price" id="modalPrice"></p>
+      <form id="orderForm">
+        <input type="hidden" id="selectedProduct" />
+        <label>আপনার নাম
+          <input id="customerName" required placeholder="নাম লিখুন" />
+        </label>
+        <label>মোবাইল নম্বর
+          <input id="customerPhone" required inputmode="tel" placeholder="01XXXXXXXXX" />
+        </label>
+        <label>ঠিকানা
+          <textarea id="customerAddress" required rows="3" placeholder="সম্পূর্ণ ঠিকানা লিখুন"></textarea>
+        </label>
+        <label>সাইজ / রং / পরিমাণ
+          <input id="customerNote" placeholder="যেমন: M, Black, 1টি" />
+        </label>
+        <button class="btn primary full" type="submit">WhatsApp-এ অর্ডার পাঠান</button>
+      </form>
+    </div>
+  </div>
+
+  <a class="floating-wa" href="https://wa.me/8801911254448" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
